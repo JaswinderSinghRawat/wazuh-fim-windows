@@ -28,7 +28,7 @@ Using the cloud also reduced local system load by offloading SIEM processing and
 - Configured FIM to monitor a custom folder on Local Disk (D:)
 - Performed multiple file operations
 - Verified alerts in Wazuh Cloud Dashboard
-![Wazuh Agent Connected](screenshots/agent-connected.png)
+![Wazuh Agent Connected](Screenshots/agent-connected.png)
 
 ---
 
@@ -40,7 +40,7 @@ D:\Jaswinder-FIM-Test
 This folder was used to safely perform all file activity tests.
 
 
-![FIM Configuration on Windows Agent](screenshots/fim-windows-config.png)
+![FIM Configuration on Windows Agent](Screenshots/fim-windows-config.png)
 
 ---
 
@@ -50,7 +50,7 @@ This folder was used to safely perform all file activity tests.
 I created a new text file inside the monitored folder using Notepad.
 
 Evidence:
-![File Creation Alert](screenshots/file-created-alert.png)
+![File Creation Alert](Screenshots/file-created-alert.png)
 
 ---
 
@@ -58,7 +58,7 @@ Evidence:
 I renamed the text file inside the monitored folder.
 
 Evidence:
-![File Rename Alert](screenshots/file-rename-alert.png)
+![File Rename Alert](Screenshots/file-rename-alert.png)
 
 ---
 
@@ -66,7 +66,7 @@ Evidence:
 I opened the file in Notepad, added content, and saved it.
 
 Evidence:
-![File Modification Alert](screenshots/file-modification-alert.png)
+![File Modification Alert](Screenshots/file-modification-alert.png)
 
 ---
 
@@ -78,7 +78,7 @@ Observation:
 The permission change resulted in an integrity checksum change alert, which is expected behavior on Windows systems where permission metadata affects file integrity.
 
 Evidence:
-![File Permission Change Alert](screenshots/file-permission-change-alert.png)
+![File Permission Change Alert](Screenshots/file-permission-change-alert.png)
 
 ---
 
@@ -86,7 +86,7 @@ Evidence:
 I deleted the file from the monitored folder.
 
 Evidence:
-![File Deletion Alert](screenshots/file-deletion-alert.png)
+![File Deletion Alert](Screenshots/file-deletion-alert.png)
 
 ---
 
@@ -95,7 +95,7 @@ Evidence:
 - Alerts were generated in near real time
 - File path, event type, and timestamps were visible in the dashboard
 - The alerts provided sufficient context for basic investigation, including file path, event type, rule level, and timestamps.
-![FIM Dashboard Overview](screenshots/dashboard-overview.png)
+![FIM Dashboard Overview](Screenshots/dashboard-overview.png)
 
 ---
 ## Screenshots Structure
@@ -112,6 +112,8 @@ screenshots/
 ├── file-deletion-alert.png
 └── dashboard-overview.png
 ```
+
+---
 
 ## Key Learnings
 - This project helped me understand how small file changes on a Windows endpoint can trigger security alerts in a SIEM.
